@@ -7,8 +7,8 @@ const postsContainer = document.querySelector("#postsContainer");
 const fragment = document.createDocumentFragment();
 const fragment2 = document.createDocumentFragment();
 const fragment3 = document.createDocumentFragment();
-let contenidoActivoUsers = null;
-let contenidoActivoPost = null;
+let usersActiveContent = null;
+let postsActiveContent = null;
 //Funcion asincrona para realizar peticiones
 const request = async (link) => {
     try {
@@ -53,9 +53,9 @@ Promise.all([request(endPointUser),request(endPointPosts)])
             //
             button.addEventListener("click",(event) => {
                 //Logica para limpiar contenedores.
-                if(contenidoActivoUsers !== null && contenidoActivoPost !== null) {
-                    contenidoActivoUsers.textContent = "";
-                    contenidoActivoPost.textContent = "";
+                if(usersActiveContent !== null && postsActiveContent !== null) {
+                    usersActiveContent.textContent = "";
+                    postsActiveContent.textContent = "";
                     }
                 
                 divUser.textContent = `name:${elementUsers.name}, Email:${elementUsers.email}`
@@ -76,8 +76,9 @@ Promise.all([request(endPointUser),request(endPointPosts)])
                     body.textContent = `"body": ${element.body},`;    
                 })
                 
-                contenidoActivoUsers = divUser;
-                contenidoActivoPost = containerTitleAndBody;  
+                usersActiveContent = divUser;
+                postsActiveContent = containerTitleAndBody;
+                
             })    
         })
         
