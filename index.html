@@ -12,7 +12,7 @@
 <body id="body" class="container-fluid bg-black text-white row">
 
     
-        <header class="col-2 offset-2 positionRelative">
+        <header class="col-2 offset-2 positionRelative pe-5">
             <nav class="d-flex flex-column px-5 positionFixed">
                 <i class="bi bi-twitter text-white fs-1"></i>
                 <span class="pb-4 nav-hover"><img class="pe-3" src="./multimedia/i1.png" alt="home">Inicio</span>
@@ -25,6 +25,12 @@
                 <span class="pb-4 nav-hover"><img class="pe-3" src="./multimedia/i8.png" alt="verified">Perfil</span>
                 <span class="pb-4 nav-hover"><img class="pe-3" src="./multimedia/i9.png" alt="more">Mas opciones</span>
                 <button class="bigBtn twitter-hover">Twittear</button>
+                <div class="">
+                    <div id="btnContainerUsers" class="btns">
+
+                    </div>
+                </div>
+                
 
                 <div id="profile" class="d-flex justify-content-evenly">
                     <div>
@@ -42,159 +48,26 @@
             </nav>
         </header>
         <main class="main-container col-4 positionRelative">
-            <div class="row positionFixed element0">
-                <h4 class="fw-bold mt-3">Inicio</h4>
-                <span class="col-6 text-center my-3 pointer">Para ti</span>
-                <span class="col-6 text-center my-3 pointer">Siguiendo</span>
+            <div  class="row positionFixed element0">
+                
             </div>
-            <section class="row">
-                <div id="element1" class="d-flex justify-content-between">
-                    <div class="ms-3">
-                        <img src="/multimedia/migue.png" alt="fotoMigue">
-                    </div>
-                    <div class="input-container">
-                        <input class="d-block" type="text"  placeholder="¡¿Qué está pasando?!">
-                        <div>
-                            <img class="pointer" src="./multimedia/img.png" alt="img">
-                            <img class="pointer" src="./multimedia/gif.png" alt="gif">
-                            <img class="pointer" src="./multimedia/img3.png" alt="list">
-                            <img class="pointer" src="./multimedia/emoji.png" alt="emoji">
-                            <img class="pointer" src="./multimedia/calendar.png" alt="calendar">
-                            <img class="pointer" src="./multimedia/ubica.png" alt="location">
-                        </div>
-                       
-                    </div>
-                    <div class="d-flex flex-column-reverse">
-                        <button class="smallBtn twitter-hover">Twittear</button>
-                    </div>
+            <section  class="row">
+                <div id="usersContainer" class="d-flex justify-content-center Users">
+                    
                 </div> 
-               
-               <div class="element2">
-                    <div class="d-flex justify-content-evenly">
-                        <div>
-                            <img src="./multimedia/midu.png" alt="">
-                        </div>
-                        <div>
-                            <div>
-                                <span class="bolder">Miguel Ángel Durán</span>
-                                <img src="./multimedia/img4.png" alt="">
-                                <span>@midudev·1h</span>
-                            </div>
-                            <div>
-                                <span>En respuesta a </span>
-                                <a href="#">@midudev</a>
-                            </div>
-                            <div>
-                                <p>5.Abarca la falta de conocimiento</p>
-                                <p>
-                                    Entra una persona en el equipo...<br>
-                                    ¿Como puede saber lo que puede y no puede hacer?
-                                </p>
-                                <p>
-                                    - Documenta todos los procesos<br>
-                                    - Automatiza el estilo de codigo lo maximo posible<br>
-                                    - Añade errores claros a los procesos de CI<br>
-                                    - Ten un buen onboarding
-                                </p>
-                            </div>
-                            <div>
-                                <img src="./multimedia/img5.png" alt="">
-                                <img class="ms-5" src="./multimedia/img6.png" alt="">
-                                <img class="ms-5" src="./multimedia/img7.png" alt="">
-                                <img class="ms-5" src="./multimedia/img8.png" alt="">
-                                <img class="ms-5" src="./multimedia/img9.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <i class="bi bi-three-dots"></i>
-                        </div>
+                <div class="d-flex flex-column-reverse">
+                    <button class="smallBtn twitter-hover">Twittear</button>
+                </div>
+               <div id="postsContainer" class="element2">
+                    
+                        
 
-                    </div>
+                    
                </div>
-               <div class="element2">
-                <div class="d-flex justify-content-evenly">
-                    <div>
-                        <img src="./multimedia/midu.png" alt="">
-                    </div>
-                    <div>
-                        <div>
-                            <span class="bolder">Miguel Ángel Durán</span>
-                            <img src="./multimedia/img4.png" alt="">
-                            <span>@midudev·1h</span>
-                        </div>
-                        <div>
-                            <span>En respuesta a </span>
-                            <a href="#">@midudev</a>
-                        </div>
-                        <div>
-                            <p>5.Abarca la falta de conocimiento</p>
-                            <p>
-                                Entra una persona en el equipo...<br>
-                                ¿Como puede saber lo que puede y no puede hacer?
-                            </p>
-                            <p>
-                                - Documenta todos los procesos<br>
-                                - Automatiza el estilo de codigo lo maximo posible<br>
-                                - Añade errores claros a los procesos de CI<br>
-                                - Ten un buen onboarding
-                            </p>
-                        </div>
-                        <div>
-                            <img src="./multimedia/img5.png" alt="">
-                            <img class="ms-5" src="./multimedia/img6.png" alt="">
-                            <img class="ms-5" src="./multimedia/img7.png" alt="">
-                            <img class="ms-5" src="./multimedia/img8.png" alt="">
-                            <img class="ms-5" src="./multimedia/img9.png" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <i class="bi bi-three-dots"></i>
-                    </div>
-
-                </div>
-           </div>
-           <div class="element2">
-            <div class="d-flex justify-content-evenly">
-                <div>
-                    <img src="./multimedia/midu.png" alt="">
-                </div>
-                <div>
-                    <div>
-                        <span class="bolder">Miguel Ángel Durán</span>
-                        <img src="./multimedia/img4.png" alt="">
-                        <span>@midudev·1h</span>
-                    </div>
-                    <div>
-                        <span>En respuesta a </span>
-                        <a href="#">@midudev</a>
-                    </div>
-                    <div>
-                        <p>5.Abarca la falta de conocimiento</p>
-                        <p>
-                            Entra una persona en el equipo...<br>
-                            ¿Como puede saber lo que puede y no puede hacer?
-                        </p>
-                        <p>
-                            - Documenta todos los procesos<br>
-                            - Automatiza el estilo de codigo lo maximo posible<br>
-                            - Añade errores claros a los procesos de CI<br>
-                            - Ten un buen onboarding
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./multimedia/img5.png" alt="">
-                        <img class="ms-5" src="./multimedia/img6.png" alt="">
-                        <img class="ms-5" src="./multimedia/img7.png" alt="">
-                        <img class="ms-5" src="./multimedia/img8.png" alt="">
-                        <img class="ms-5" src="./multimedia/img9.png" alt="">
-                    </div>
-                </div>
-                <div>
-                    <i class="bi bi-three-dots"></i>
-                </div>
-
-            </div>
-       </div>
+               
+           
+           
+       
             </section>
         </main>
 

@@ -56,6 +56,28 @@ input {
     padding: 8px 13px ;
     font-size: 15px;
 }
+.btnSwitch {
+    
+    font-weight: bold;
+    color: white;
+    background-color: #1d9bf0;
+    border: none;
+    height: 40px;
+    padding: 7px 7px;
+    border-radius: 5%;
+    margin: 20px 1px;
+    font-size: 20px;
+    
+}
+
+.btns{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    
+}
+
 
 .search {
     border-radius: 30px 30px;
@@ -185,7 +207,7 @@ input {
     width: 167px;
 }
 #profile {
-    margin-top: 150px;
+    margin-top: 90px;
     font-size: 15px;
 }
 .bolder {
